@@ -1,6 +1,9 @@
 public class Circle extends Form {
     private float radius;
-    public Circle() {}
+    public Circle() {
+        super();
+        radius=0;
+    }
     public Circle(float radius,String color) {
         super(color);
         this.radius = radius;
