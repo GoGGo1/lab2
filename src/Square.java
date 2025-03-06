@@ -1,0 +1,19 @@
+public class Square extends Form {
+    private float side;
+    public Square() {}
+    public Square(float side,String color) {
+        super(color);
+        this.side = side;
+    }
+    public float getArea() {
+        return side * side;
+    }
+
+    public String toString() {
+        return super.toString()+ " and a side of " + side;
+    }
+
+    public boolean equals(Object o) {
+        return this.side == ((Square)o).side;
+    }
+}
